@@ -12,7 +12,7 @@ return [
     | default location for this type of information, allowing packages
     | to have a conventional place to find your various credentials.
     |
-    */
+ */
 
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
@@ -33,6 +33,12 @@ return [
         'model' => App\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
+    ],
+
+    'passport' => [
+        'grant_type' => env('PASSPORT_GRANT_TYPE'),
+        'client_id' => env('PASSPORT_CLIENT_ID'),
+        'client_secret' => env('PASSPORT_CLIENT_SECRET')
     ],
 
 ];
